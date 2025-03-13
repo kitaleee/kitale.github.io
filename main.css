@@ -1,0 +1,182 @@
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+/* General Styles */
+html {
+    background-color: white;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #5c0303;
+    background-color: #fcf9e2;
+}
+
+/* Header Styles */
+header {
+    padding: 1.5em 0;
+    background-image: linear-gradient(
+        30deg, #5c0303 0%, #fcf9e2 30%, white 50%, #fcf9e2 80%, #5c0303 100%);
+}
+header h1 {
+    color: #5c0303;
+}
+header h2 {
+    font-style: italic;
+}
+header img {
+    float: left;
+    padding: 0 30px;
+}
+
+/* Navigation Bar */
+nav {
+    clear: both;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #5c0303;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+nav a {
+    padding: 1em 0;
+    text-decoration: none;
+    color: #fcf9e2;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+nav a.current {
+    color: yellow;
+}
+
+/* Dropdown Menu */
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #5c0303;
+    min-width: 100%;
+    z-index: 100%;
+}
+nav ul li:hover .submenu {
+    display: block;
+}
+.submenu li {
+    display: block;
+}
+.submenu li a {
+    padding: 5px;
+    color: white;
+    border: none;
+    text-align: center;
+}
+.submenu li a:hover {
+    background-color: brown;
+}
+
+/* Section */
+section {
+    clear: left;
+    padding: 0 20px;
+    width: 525px;
+    float: right;
+}
+section h1 {
+    color: red;
+    font-size: 150%;
+    padding: .5em 0 .25em;
+}
+section h2 {
+    color: black;
+    font-size: 150%;
+    padding: .5em 0 .25em;
+}
+section h3 {
+    color: black;
+    font-size: 120%;
+    padding-bottom: .25em;
+}
+section h4 {
+    color: red;
+    font-size: 150%;
+    padding-bottom: .25em;
+}
+section p {
+    padding-bottom: .5em;
+}
+section blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+section ul {
+    padding: 0 0 1.5em 1.25em;
+    list-style-type: circle;
+}
+section li {
+    padding-bottom: .35em;
+}
+
+/* Articles */
+article {
+    border-top: 2px solid #5c0303;
+    border-bottom: 2px solid #5c0303;
+}
+article h1 {
+    color: red;
+}
+article img {
+    float: right;
+    margin: 1em 0 1em 1em;
+    border: 1px solid black;
+}
+
+/* Aside */
+aside {
+    width: 215px;
+    float: right;
+    padding-left: 20px;
+}
+aside h1 {
+    color: red;
+    font-size: 150%;
+    padding: .5em 0 .25em;
+}
+aside h2 {
+    font-size: 120%;
+    padding-bottom: .25em;
+}
+aside img {
+    padding-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: red;
+    border-top: 3px solid #5c0303;
+    clear: both;
+}
+footer p {
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
